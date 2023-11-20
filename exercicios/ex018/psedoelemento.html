@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <title>Trabalhando com pseudo-elementos</title>
+  <meta name="description" content="Usando pseudo-elementos no documento HTML">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited{
+      color: darkred;
+    }
+
+    a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+    a:active{
+      color: yellow;
+    }
+    a::after{
+      content: '';
+      display: inline-block;
+      background: red;
+      height: 16px;
+      width: 16px; 
+    }
+    a::before{
+      content: '[link]';
+      color: blue;
+    }
+      .special{
+        background-color: rgb(155, 206, 179);
+      }
+    
+
+
+  </style>
+</head>
+
+
+
+
+<body>
+  <h1>Personalizando links</h1>
+  <ul>
+    <li><a href="">Repositório do Github</a></li>
+    <li><a href="">Canal do Youtube</a></li>
+    <li><a href="https://www.naruto-arena.net/" target="_blank" class="special">Site do Naruto</a></li>
+
+  </ul>
+</body>
+
+</html>
