@@ -67,7 +67,7 @@ header {
 header > h1 {
   color: var(--corb);
   font-family: var(--fonte-destaque);
-  margin-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 3rem;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.801);
 }
