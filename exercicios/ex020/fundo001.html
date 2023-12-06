@@ -1,1 +1,67 @@
-{\rtf1}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Aprendendo a colocar imagens no background">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <title>Teste de Imagem de Fundo</title>
+  <style>
+    body{
+      background-image: url("img/wallpaper001.jpg");
+    }
+    .quadrado{
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: lightgreen;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+    }
+
+    #q1{
+      background-color: skyblue;
+    }
+    #q2{
+      background-image: linear-gradient(to bottom, yellow, red);
+    }
+    #q3{
+      background-image: url("img/pattern003.png");
+    }
+    #q4{
+      background-image: url("img/wallpaper002.jpg");
+      background-size: cover;
+    }
+    #q5{
+      background-image: url("img/pattern002.png");
+    }
+    #q6{
+      background-image: url("img/pattern001.png");
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="quadrado" id="q1">
+
+  </div>
+  <div class="quadrado" id="q2">
+
+  </div>
+  <div class="quadrado" id="q3">
+
+  </div>
+  <body>
+    <div class="quadrado" id="q4">
+  
+    </div>
+    <div class="quadrado" id="q5">
+  
+    </div>
+    <div class="quadrado" id="q6">
+  
+    </div>
+</body>
+</html>
