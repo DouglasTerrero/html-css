@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Alinhamento vertical de elemento">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhamento Vertical</title>
+  <style>
+    #fora{
+      height: 600px;
+      width: 1000px;
+      background-color: rgb(100, 100, 216);
+      background-image: url(img/target001.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+    }
+    #dentro{
+      height: 250px;
+      width: 450px;
+      background-color: rgb(235, 235, 33);
+      background-image: url(img/target001.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+</head>
+<body>
+  <section id="fora">
+    <article id="dentro">
+
+    </article>
+  </section>
+</body>
+</html>
