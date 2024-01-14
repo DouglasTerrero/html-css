@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho{
+    background-color: #000;
+    padding: 60px 0px 20px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+}
+.cabecalho h1{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    line-height: 2rem;
+    margin:20px 0px 20px 60px ;
+    font-size: 1.5rem;
+}
+.bg-folha{
+    background: aqua url(../img/bg.escrita.jpg) center fixed;
+    background-size: cover;
+    color: #fff;
+    font-weight: bold;
+}
+.bg-flor{
+    background: aqua url(../img/bg-flor.jpg) center fixed;
+    background-size: cover;
+    color: #fff;
+    font-weight: bold;
+}
+.bg-tecno{
+  background: aqua url(../img/bg-tecno.jpg) center fixed;
+  background-size: cover;
+
+  position: relative;
+}
+.bg-tecno p{
+  color: #fff;
+  font-weight: bold;
+  z-index: 1;
+}
+.bg-tecno::after{
+  content: "";
+  background-color: #0000008c;
+  height: 250px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
